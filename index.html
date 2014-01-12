@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<title> phonegap test one</title>
+
+</head>
+
+<body>
+	<h1> phone test one sucess </h1>
+	
+	<button id="hello">hi</button>
+	<button id="clear">clear</button>
+	<div id="results"></div>
+	
+	<script src="js/zepto.min.js"></script>
+	<script src="js/hello.js"></script>
+		<script>
+			
+			$('#hello').click(function(){
+				HELLO.DoIt($('#results'));
+			});
+		
+			$('#clear').click(function(){
+				$('#results').html('');
+			});
+			
+			
+		</script>
+</body>
+</html>
